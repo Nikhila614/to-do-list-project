@@ -1,24 +1,16 @@
 #Calculator 
 print("-- Welcome to Calculator App --")
-
 ch = "yes"
-
 while ch.lower() != "no":
     try:
-        # Input two numbers
         a = int(input("Enter first number: "))
         b = int(input("Enter second number: "))
-        
-        # Menu for operations
         print("\nChoose an operation:")
         print("1 Addition (+)")
         print("2 Subtraction (-)")
         print("3 Multiplication (*)")
         print("4 Division (/)")
-        
         operation = input("Enter your choice (1/2/3/4 or +, -, *, /): ")
-        
-        # Perform the operation
         if operation == '1' or operation == '+':
             print(f"{a} + {b} = {a + b}")
         elif operation == '2' or operation == '-':
@@ -38,5 +30,4 @@ while ch.lower() != "no":
     # Check if user wants to continue
     ch = input("\nDo you want to continue? (yes/no): ")
     print()
-
 print("Thank you for using the Calculator App!")
